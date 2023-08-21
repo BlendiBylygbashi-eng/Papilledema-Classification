@@ -69,3 +69,13 @@ class LrAsk(keras.callbacks.Callback):
                         new_lr = float(ans)
                         tf.keras.backend.set_value(self.model.optimizer.lr, new_lr)
                         print('Changing LR to', new_lr)
+
+# Define the number of epochs
+epochs = 40
+
+# Initialize the ReduceLROnPlateau callback if you want to use it
+# This callback reduces the learning rate when the validation loss stops improving
+rlronp = tf.keras.callbacks.ReduceLROnPlateau(monitor="val_loss", factor=0.5, patience=2, verbose=1)
+
+# List of callbacks
+callbacks = [rlronp]
