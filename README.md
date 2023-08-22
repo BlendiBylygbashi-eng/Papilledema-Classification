@@ -77,5 +77,20 @@ For training the model, several practices and tools were implemented:
 
 4. **Data Generators**: Both training (`train_gen`) and validation (`valid_gen`) data are passed using data generators, allowing for efficient data streaming and on-the-fly augmentations if implemented.
 
+---
+
+## Model Evaluation
+
+To assess the performance and interpretability of our trained model, the following evaluation techniques were employed:
+
+1. **Validation Loss and Accuracy Graphs**: These provide a visual representation of how the model's performance progressed during training. By observing trends and potential plateaus, we can gain insights into the model's learning efficiency and potential overfitting.
+
+2. **Confusion Matrix**: This matrix gives a comprehensive overview of how the model's predictions compare with actual labels. It's crucial for understanding both the type I and type II errors the model might be making.
+
+3. **ROC Curve (Receiver Operating Characteristic Curve)**: An essential tool for evaluating classifier output quality. It showcases the trade-off between true positive rate and false positive rate, helping to determine the optimal threshold for classification.
+
+4. **Precision-Recall Curve**: This curve is especially vital for imbalanced datasets. It demonstrates the relationship between precision (positive predictive value) and recall (true positive rate), providing insights into the model's capability to retrieve only the relevant instances.
+
+5. **Grad-CAM (Gradient-weighted Class Activation Mapping)**: An advanced technique to visualize where the model is "looking" when making decisions. By highlighting regions in the input image that influenced the output, Grad-CAM aids in interpreting the model's predictions, ensuring it's making decisions based on relevant features.
 
 
