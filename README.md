@@ -57,6 +57,8 @@ In this section, we've used the EfficientNetB3 model, a convolutional neural net
    - **Loss Function**: Categorical Crossentropy, suitable for multi-class classification tasks.
    - **Metrics**: Accuracy, providing a clear measure of the model's performance during training.
 
+---
+
 ## Model Training
 
 For training the model, several practices and tools were implemented to ensure optimal convergence and accuracy:
