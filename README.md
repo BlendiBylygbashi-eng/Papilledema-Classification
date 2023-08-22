@@ -23,7 +23,7 @@ The success of a deep learning model heavily depends on the quality and structur
 
 ### Highlights:
 
-- **Data Source**: Our dataset has been sourced from [Kim, U. (2018, August 1). Machine learning for Pseudopapilledema.](https://doi.org/10.17605/OSF.IO/2W5CE). We appreciate and credit the contributors for making this valuable data available.
+- **Data Source**: Our first dataset has been sourced from [Kim, U. (2018, August 1). Machine learning for Pseudopapilledema.](https://doi.org/10.17605/OSF.IO/2W5CE). Our second dataset was sourced from [The William F. Hoyt Neuro-Ophthalmology Collection](https://novel.utah.edu/Hoyt/collection.php). We appreciate and credit the contributors for making this valuable data available.
 
 - **Data Augmentation**: To increase the robustness of our model and counteract overfitting, we've used data augmentation techniques such as simple rotations, scaling and translation. This artificially expands the dataset by introducing minor alterations to the existing images, with the aim of increasing the extent to which the model is able to generalize to new data.
 
