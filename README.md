@@ -38,4 +38,26 @@ For a more detailed walkthrough of our data preprocessing steps and to view the 
 
 ---
 
+## Model Creation
+
+In this section, we've utilized the robustness of the EfficientNetB3 model, a convolutional neural network architecture that is well-regarded for its efficiency and accuracy. The steps for model creation are outlined as follows:
+
+1. **Input Specifications**: Images are reshaped to a size of 224x224 pixels with 3 channels, representing the RGB color space.
+  
+2. **Base Model - EfficientNetB3**: The model is initialized without its top layers, enabling us to use its pre-trained weights from the ImageNet dataset for transfer learning. Furthermore, the output of the last convolutional layer is max-pooled.
+
+3. **Custom Layers**: 
+   - **Batch Normalization**: Normalizes the activations of the previous layer, ensuring a smoother training process.
+   - **Dense Layer**: A fully connected layer with 256 neurons and ReLU activation function. Regularizations (both L1 and L2) are applied for better generalization.
+   - **Dropout**: A dropout rate of 0.4 is used to prevent overfitting by randomly setting a fraction of input units to 0 during training.
+   - **Output Layer**: A dense layer with a number of neurons corresponding to the number of classes in our dataset. The softmax activation function ensures the output values are in the range of [0,1], representing the predicted class probabilities.
+
+4. **Model Compilation**: 
+   - **Optimizer**: Adamax optimizer with a learning rate of 0.001, known for its efficiency and low memory requirements.
+   - **Loss Function**: Categorical Crossentropy, suitable for multi-class classification tasks.
+   - **Metrics**: Accuracy, providing a clear measure of the model's performance during training.
+
+With this setup, the model leverages the power of transfer learning from EfficientNetB3, while also being flexible enough to cater to the specifics of our dataset through the custom layers.
+
+
 
