@@ -61,7 +61,7 @@ In this section, we've used the EfficientNetB3 model, a convolutional neural net
 
 ## Model Training
 
-For training the model, several practices and tools were implemented to ensure optimal convergence and accuracy:
+For training the model, several practices and tools were implemented:
 
 1. **Custom Callback - LrAsk**: A custom Keras callback, named `LrAsk`, has been developed to provide enhanced control during the training process. It offers the ability to:
    - Halt training at a specific epoch.
@@ -73,13 +73,9 @@ For training the model, several practices and tools were implemented to ensure o
 3. **Training Parameters**:
    - **Epochs**: The model is trained for 40 epochs. However, with the `LrAsk` callback, this can be adjusted during training.
    - **Verbosity**: Set to 1, showing a progress bar for each epoch.
-   - **Callbacks**: `ReduceLROnPlateau` is among the callbacks used, ensuring adaptive learning rate adjustments.
    - **Shuffling**: Data shuffling is turned off (`shuffle=False`), preserving the order of training samples across epochs.
 
 4. **Data Generators**: Both training (`train_gen`) and validation (`valid_gen`) data are passed using data generators, allowing for efficient data streaming and on-the-fly augmentations if implemented.
-
-By leveraging the capabilities of custom callbacks and adaptive learning rate adjustments, the training process is both flexible and robust, ensuring the model achieves its best possible performance on the dataset.
-
 
 
 
