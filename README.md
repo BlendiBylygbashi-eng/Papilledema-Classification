@@ -120,8 +120,3 @@ The implementation utilizes several Python libraries for data processing, modeli
 - OpenCV (cv2) for image processing.
 - Pandas and Numpy for data manipulation and mathematical computations.
 - Seaborn and Matplotlib for visualization.
-
-**Note:** For optimal performance and compatibility, it's recommended to run the provided scripts in a Google Colab environment.
-
-
-
