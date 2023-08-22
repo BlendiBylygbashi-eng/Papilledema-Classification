@@ -93,4 +93,19 @@ To assess the performance and interpretability of our trained model, the followi
 
 5. **Grad-CAM (Gradient-weighted Class Activation Mapping)**: An advanced technique to visualize where the model is "looking" when making decisions. By highlighting regions in the input image that influenced the output, Grad-CAM aids in interpreting the model's predictions, ensuring it's making decisions based on relevant features.
 
+---
+
+## Predictions on New Data
+
+Once the model has been trained and evaluated, it's primed to make predictions on fresh, unseen data. This phase is crucial to ascertain how the model generalizes to real-world scenarios beyond the training set. Simply input your new fundus images, and the model will produce its predictions, classifying the potential presence of Papilledema.
+
+---
+
+## Utilities and Helper Functions
+
+The `utils` directory includes a method to isolate the optic disc based on pixel intensities. However, it's worth noting that this method provides preliminary results, and there's room for improvement.
+
+For enhanced accuracy in isolating the optic disc, a dedicated model might be beneficial. This specialized model can be trained to focus on isolating the optic disc, and its output can then be fed into our main classification model for better results.
+
+
 
