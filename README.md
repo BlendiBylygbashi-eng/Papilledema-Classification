@@ -4,6 +4,9 @@ Welcome to the Papilledema Classification repository! Here, we will be using Con
 
 Through this repository, you'll find a thorough breakdown of each segment of our pipeline, ranging from data preparation and augmentation to model creation, training, and validation. We aim to provide a comprehensive guide, enabling you to understand the methodologies employed and to adapt or extend them as needed.
 
+> **Recommended Environment:** This project is optimized for Google Colab. For best results, run the provided scripts within a Colab notebook, and replace any instance of Google Drive paths with your own paths.
+
+
 ---
 
 ## Table of Contents
@@ -106,6 +109,19 @@ Once the model has been trained and evaluated, it's primed to make predictions o
 The `utils` directory includes a method to isolate the optic disc based on pixel intensities. However, it's worth noting that this method provides preliminary results, and there's room for improvement.
 
 For enhanced accuracy in isolating the optic disc, a dedicated model might be beneficial. This specialized model can be trained to focus on isolating the optic disc, and its output can then be fed into our main classification model for better results.
+
+---
+
+## Required Libraries
+
+The implementation utilizes several Python libraries for data processing, modeling, and evaluation. Key libraries include:
+
+- TensorFlow (and Keras) for deep learning model creation and training.
+- OpenCV (cv2) for image processing.
+- Pandas and Numpy for data manipulation and mathematical computations.
+- Seaborn and Matplotlib for visualization.
+
+**Note:** For optimal performance and compatibility, it's recommended to run the provided scripts in a Google Colab environment.
 
 
 
