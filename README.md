@@ -1,6 +1,6 @@
 # Papilledema Classification via Deep Learning
 
-Welcome to the Papilledema Classification repository! Here, we will be using Convolutional Neural Networks (CNNs) to diagnose Papilledema from images of the back of the eye. The goal is to use the power of deep learning to accurately and non-invasively detect Papilledema (swollen optic disc) which is an indicator of intra-cranial hypertemsion.
+Welcome to the Papilledema Classification repository! Here, we will be using Convolutional Neural Networks (CNNs) to diagnose Papilledema from images of the back of the eye. The goal is to use the power of deep learning to accurately and non-invasively detect Papilledema (swollen optic disc) which is an indicator of intra-cranial hypertension.
 
 Through this repository, you'll find a thorough breakdown of each segment of our pipeline, ranging from data preparation and augmentation to model creation, training, and validation. We aim to provide a comprehensive guide, enabling you to understand the methodologies employed and to adapt or extend them as needed.
 
@@ -106,7 +106,7 @@ Once the model has been trained and evaluated, it's primed to make predictions o
 
 ## Utilities and Helper Functions
 
-The `utils` directory includes a method to isolate the optic disc based on pixel intensities. However, it's worth noting that this method provides preliminary results, and there's room for improvement.
+The `utils` directory includes a function to isolate the optic disc based on pixel intensities. However, it's worth noting that this method provides preliminary results, and there's room for improvement.
 
 For enhanced accuracy in isolating the optic disc, a dedicated model might be beneficial. This specialized model can be trained to focus on isolating the optic disc, and its output can then be fed into our main classification model for better results.
 
