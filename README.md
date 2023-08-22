@@ -9,11 +9,12 @@ Through this repository, you'll find a thorough breakdown of each segment of our
 ## Table of Contents
 
 1. [Data Processing](./data-processing)
-2. [Model Creation and Training](./training)
-3. [Model Evaluation](./evaluation)
-4. [Predictions on New Data](./predictions)
-5. [Utilities and Helper Functions](./utils)
-6. [Required Libraries](./required-imports.py)
+2. [Model Creation](./models)
+3. [Model Training](./training)
+4. [Model Evaluation](./evaluation)
+5. [Predictions on New Data](./predictions)
+6. [Utilities and Helper Functions](./utils)
+7. [Required Libraries](./required-imports.py)
 
 ---
 
