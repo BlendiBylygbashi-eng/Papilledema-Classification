@@ -23,7 +23,7 @@ The success of a deep learning model heavily depends on the quality and structur
 
 ### Highlights:
 
-- **Data Source**: Our dataset has been sourced from [Kim, U. (2018, August 1). Machine learning for Pseudopapilledema.]([URL_TO_THE_DATA_SOURCE](https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fdoi.org%2F10.17605%2FOSF.IO%2F2W5CE)). We appreciate and credit the contributors for making this valuable data available.
+- **Data Source**: Our dataset has been sourced from [Kim, U. (2018, August 1). Machine learning for Pseudopapilledema.]([https://colab.research.google.com/corgiredirector?site=https%3A%2F%2Fdoi.org%2F10.17605%2FOSF.IO%2F2W5CE]) We appreciate and credit the contributors for making this valuable data available.
 
 - **Data Augmentation**: To increase the robustness of our model and counteract overfitting, we've used data augmentation techniques such as simple rotations, scaling and translation. This artificially expands the dataset by introducing minor alterations to the existing images, with the aim of increasing the extent to which the model is able to generalize to new data.
 
